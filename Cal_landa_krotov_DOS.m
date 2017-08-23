@@ -1,19 +1,13 @@
-function landa = CalLan(del, n, xx)
-
-A = [[0,-1, 0, 0];
-     [1, 0, 0, 0];
-     [0, 0, 0,-1];
-     [0, 0, 1, 0]];
+function landa = Cal_landa_krotov_DOS(del, n, ll, uy)
  
 landa = zeros(4,n);
 
-l2 = [0,0,0,xx(4,n)]'
+l2 = [0,0,0,ll]'
 
 landa(:,n) = l2;
     
 for j=n:-1:2
-    v = -1 * (l2' * (A * xx(:,j)));
-        
+    v = uy(j);
     V = [[0,-v,-1, 0];
          [v, 0, 0, 1];
          [1, 0, 0,-v];
