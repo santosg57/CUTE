@@ -35,5 +35,8 @@ for i=1:n
     z = 1+r*cos(teta(i))*ones(1, nf);
     plot3(x,y,z)
 end
+<<<<<<< HEAD
 
 plot3(x1, x2, x3, 'r')
+=======
+>>>>>>> 21becde8818ea620e754ff9f67453f3c48244a09
