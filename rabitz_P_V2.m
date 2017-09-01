@@ -4,7 +4,8 @@ close all
 clear all
 
 t1 = 0;
-t2 = pi/sqrt(2); 
+%t2 = pi/sqrt(2);
+t2 = pi/sqrt(2);
 del = 10^(-4);
 
 n = fix(t2/del) + 1
@@ -52,6 +53,7 @@ view(-50,30)
 camlight left
 
 plot3(x1, x2, x3,'Color','green', 'LineWidth',3)
+plot3(-x1, x2, -x3,'Color','green', 'LineWidth',3)
 
 axis([-1.5, 1.5, -1.5, 1.5, -1.5, 1.5])
 
