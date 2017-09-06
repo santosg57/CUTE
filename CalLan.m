@@ -7,7 +7,7 @@ A = [[0,-1, 0, 0];
  
 landa = zeros(4,n);
 
-l2 = [0, 0, 0, xx(4,n)]'  % tenia el valor [0,0,0,xx(4,n)]' ago2917
+l2 = [0, 0, 0, -xx(4,n)*1.087]'  % tenia el valor [0,0,0,xx(4,n)]' ago2917
 
 landa(:,n) = l2;
     

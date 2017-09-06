@@ -10,7 +10,7 @@ ni1 = 3/2;
 landa = zeros(4,n);
 %landa(1,:) = del*(1:n);
 
-l2 = [0,0,0,xx(4,n)]';
+l2 = [0,0,0, -1.087*xx(4,n)]';
 landa(:,n) = l2;
     
 for j=n:-1:2

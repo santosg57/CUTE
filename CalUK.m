@@ -49,7 +49,8 @@ end
     
 M=.4874;
 t1 = 0;
-t2 = pi/sqrt(2); 
+%t2 = pi/sqrt(2);
+t2 = pi - 0.15;
 del = 10^(-4);
 
 n = fix(t2/del) + 1
@@ -82,5 +83,6 @@ fprintf(fi, '\n')
 fclose(fi)
 
 res.uu = uu;
-res.xf = xx(4, n);
+res.xf = -1.087*xx(4, n);
+res.xx = xx;
 
